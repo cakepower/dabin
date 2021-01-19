@@ -1,5 +1,6 @@
 let distance_sensor = 0
 let strip = neopixel.create(DigitalPin.P0, 32, NeoPixelMode.RGB)
+strip.show()
 basic.forever(function () {
     basic.showNumber(pins.analogReadPin(AnalogPin.P3))
     distance_sensor = pins.analogReadPin(AnalogPin.P3)
@@ -10,4 +11,5 @@ basic.forever(function () {
     0,
     32
     ), 32)
+    strip.show()
 })
