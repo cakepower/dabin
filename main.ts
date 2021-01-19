@@ -4,6 +4,9 @@ strip.show()
 basic.forever(function () {
     basic.showNumber(pins.analogReadPin(AnalogPin.P3))
     distance_sensor = pins.analogReadPin(AnalogPin.P3)
+    if (0 == 0) {
+    	
+    }
     strip.showBarGraph(pins.map(
     distance_sensor,
     400,
